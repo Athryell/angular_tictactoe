@@ -1,0 +1,64 @@
+<div class="icons-container">
+  <h2>Choose first player icon</h2>
+
+  <div class="icons cross-player">
+    <i
+      (click)="setPlayerIcon(true, 'x-lg')"
+      class="bi bi-x-lg"
+      [class.selected]="iconXSelected == 'x-lg'"
+    ></i>
+    <i
+      (click)="setPlayerIcon(true, 'x-circle-fill')"
+      class="bi bi-x-circle-fill"
+      [class.selected]="iconXSelected == 'x-circle-fill'"
+    ></i>
+    <i
+      (click)="setPlayerIcon(true, 'x')"
+      class="bi bi-x"
+      [class.selected]="iconXSelected == 'x'"
+    ></i>
+    <i
+      (click)="setPlayerIcon(true, 'x-diamond-fill')"
+      class="bi bi-x-diamond-fill"
+      [class.selected]="iconXSelected == 'x-diamond-fill'"
+    ></i>
+    <i
+      (click)="setPlayerIcon(true, 'emoji-smile-fill')"
+      class="bi bi-emoji-smile-fill"
+      [class.selected]="iconXSelected == 'emoji-smile-fill'"
+    ></i>
+  </div>
+</div>
+
+<div class="icons-container">
+  <h2>Choose second player icon</h2>
+
+  <div class="icons circle-player">
+    <i
+      (click)="setPlayerIcon(false, 'circle')"
+      class="bi bi-circle"
+      [class.selected]="iconYSelected == 'circle'"
+    ></i>
+    <i
+      (click)="setPlayerIcon(false, 'record-circle-fill')"
+      class="bi bi-record-circle-fill"
+      [class.selected]="iconYSelected == 'record-circle-fill'"
+    ></i>
+    <i
+      (click)="setPlayerIcon(false, 'dot')"
+      class="bi bi-dot"
+      [class.selected]="iconYSelected == 'dot'"
+    ></i>
+    <i
+      (click)="setPlayerIcon(false, 'diamond')"
+      class="bi bi-diamond"
+      [class.selected]="iconYSelected == 'diamond'"
+    ></i>
+    <i
+      (click)="setPlayerIcon(false, 'emoji-smile')"
+      class="bi bi-emoji-smile"
+      [class.selected]="iconYSelected == 'emoji-smile'"
+    ></i>
+  </div>
+</div>
+<button (click)="startGame()" class="btn">Let's go!</button>

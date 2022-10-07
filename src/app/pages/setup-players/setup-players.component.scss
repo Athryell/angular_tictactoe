@@ -1,0 +1,37 @@
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+
+.icons-container {
+  margin-bottom: 3rem;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  margin-block: 1em;
+
+  & .bi{
+    padding: 0.25em;
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+  }
+
+  &.cross-player {
+    .bi:hover{
+      color:crimson;
+    }
+    .bi.selected{
+      outline: 2px solid crimson;
+    }
+  }
+  &.circle-player {
+    .bi:hover{
+      color:teal;
+    }
+    .bi.selected{
+      outline: 2px solid teal;
+    }
+  }
+
+}

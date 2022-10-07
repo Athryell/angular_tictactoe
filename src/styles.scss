@@ -1,0 +1,40 @@
+*, *::after, *::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 4rem;
+  width: 100%;
+}
+
+.btn{
+  display: block;
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 8px;
+  background-color:forestgreen;
+  font-size: 1rem;
+  margin: 2rem auto;
+
+  &:hover {
+    opacity: 0.90;
+  }
+
+  &:active{
+    outline: 2px solid gray ;
+  }
+
+  &.btn-secondary {
+    background-color: transparent;
+    outline: 2px solid forestgreen;
+  }
+}
+
+

@@ -1,0 +1,46 @@
+<h1 class="title">
+  Player
+  <i [ngClass]="isPlayerCrossMove ? 'bi bi-x-lg' : 'bi bi-circle'"></i> turn
+</h1>
+
+<div class="board">
+  <app-cell
+    [isCrossTurn]="isPlayerCrossMove"
+    (cellClick)="onCellClicked()"
+  ></app-cell
+  ><app-cell
+    [isCrossTurn]="isPlayerCrossMove"
+    (cellClick)="onCellClicked()"
+  ></app-cell
+  ><app-cell
+    [isCrossTurn]="isPlayerCrossMove"
+    (cellClick)="onCellClicked()"
+  ></app-cell>
+  <app-cell
+    [isCrossTurn]="isPlayerCrossMove"
+    (cellClick)="onCellClicked()"
+  ></app-cell
+  ><app-cell
+    [isCrossTurn]="isPlayerCrossMove"
+    (cellClick)="onCellClicked()"
+  ></app-cell
+  ><app-cell
+    [isCrossTurn]="isPlayerCrossMove"
+    (cellClick)="onCellClicked()"
+  ></app-cell>
+  <app-cell
+    [isCrossTurn]="isPlayerCrossMove"
+    (cellClick)="onCellClicked()"
+  ></app-cell
+  ><app-cell
+    [isCrossTurn]="isPlayerCrossMove"
+    (cellClick)="onCellClicked()"
+  ></app-cell
+  ><app-cell
+    [isCrossTurn]="isPlayerCrossMove"
+    (cellClick)="onCellClicked()"
+  ></app-cell>
+</div>
+
+<button (click)="restartGame()" *ngIf="activeTiles >= 9" class="btn">Play again!</button>
+<button routerLink="/" *ngIf="activeTiles >= 9" class="btn btn-secondary">Choose other icons</button>
